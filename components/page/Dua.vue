@@ -4,7 +4,7 @@
             <div class="md:flex md:flex-col h-screen md:w-1/2">
                 <div data-aos="fade-right" data-aos-duration="1500" class="flex h-full sm:flex-row w-full">
                     <div class="w-full h-full bg-center bg-contain bg-no-repeat"
-                        :style="{ backgroundImage: `url(${require('~/assets/bg-undangan/DSC00109.JPG')})` }">
+                        :style="{ backgroundImage: `url(${mempelai.putri})` }">
                         <div class="block md:hidden text-2xl font-medium text-center p-4">Mempelai Perempuan</div>
                     </div>
                 </div>
@@ -43,7 +43,7 @@
             <div class="md:flex md:flex-row h-screen md:w-1/2">
                 <div data-aos="fade-down" data-aos-duration="1500" class="flex h-full sm:flex-row w-full">
                     <div class="w-full h-full bg-center bg-contain bg-no-repeat"
-                        :style="{ backgroundImage: `url(${require('~/assets/bg-undangan/DSC00109.JPG')})` }">
+                        :style="{ backgroundImage: `url(${mempelai.putra})` }">
                         <div class="block md:hidden text-2xl font-medium text-center p-4">Mempelai Laki-laki</div>
                     </div>
                 </div>
@@ -73,9 +73,15 @@ export default {
             endTime: new Date("2023-01-29 8:00 pm"),
             title: "Nikahnya Ema Ruly Pratiwi & Teo Anggara",
             details: "Kehormatan bagi kami atas kehadiran Bapak/Ibu/Saudara",
-            location: "Plemahan, Kediri"
+            location: "Plemahan, Kediri",
+            mempelai: null
         };
     },
+
+    async fetch() {
+        this.mempelai = this.$store.state.bgUndangan.mempelai
+    },
+
     methods: {
         addToCalendar() {
             if (!this.startTime)

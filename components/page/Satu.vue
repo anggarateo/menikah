@@ -19,27 +19,24 @@
         <ClientOnly>
             <carousel :per-page="1" :autoplay="true" :loop="true" :pagination-enabled="false" :speed="3000"
                 :autoplay-timeout="6000" :autoplay-hover-pause="false" :mouse-drag="false" :touch-drag="false">
-                <slide>
+                <slide v-for="(image, i) in images" :key="i">
                     <div class="w-full h-screen bg-center bg-contain bg-repeat brightness-50"
-                        :style="{ backgroundImage: `url(${require('~/assets/bg-undangan/DSC00063.webp')})` }">
-                    </div>
-                </slide>
-                <slide>
-                    <div class="w-full h-screen bg-center bg-contain bg-repeat brightness-50"
-                        :style="{ backgroundImage: `url(${require('~/assets/bg-undangan/DSC00076.webp')})` }">
-                    </div>
-                </slide>
-                <slide>
-                    <div class="w-full h-screen bg-center bg-contain bg-repeat brightness-50"
-                        :style="{ backgroundImage: `url(${require('~/assets/bg-undangan/DSC00109.webp')})` }">
-                    </div>
-                </slide>
-                <slide>
-                    <div class="w-full h-screen bg-center bg-contain bg-repeat brightness-50"
-                        :style="{ backgroundImage: `url(${require('~/assets/bg-undangan/DSC00151.webp')})` }">
+                        :style="{ backgroundImage: `url(${image})` }">
                     </div>
                 </slide>
             </carousel>
         </ClientOnly>
     </div>
 </template>
+<script>
+export default {
+    data() {
+        return {
+            images: null
+        }
+    },
+    async fetch() {
+        this.images = this.$store.state.bgUndangan.webp
+    }
+}
+</script>

@@ -1,6 +1,5 @@
 export default {
-  target: 'server',
-  ssr: true,
+  target: 'static',
   router: {
     base: '/menikah/'
   },
@@ -50,8 +49,7 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    'vue-scrollto/nuxt',
-    '@nuxt/image'
+    'vue-scrollto/nuxt'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -69,18 +67,5 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  },
-
-  image: {
-    dir: 'assets/bg-undangan/',
-    screens: {
-      xs: 320,
-      sm: 640,
-      md: 768,
-      lg: 1024,
-      xl: 1280,
-      xxl: 1536,
-      '2xl': 1536
-    }
   }
 }

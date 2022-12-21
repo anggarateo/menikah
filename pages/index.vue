@@ -16,35 +16,11 @@
       <ClientOnly>
         <carousel :per-page="1" :autoplay="true" :loop="true" :pagination-enabled="false" :speed="3000"
           :autoplay-timeout="6000" :autoplay-hover-pause="false">
-          <!-- <slide>
+          <slide v-for="(image, i) in images" :key="i">
             <div class="h-screen bg-center bg-contain bg-no-repeat brightness-50"
-              :style="{ backgroundImage: `url(${require('~/assets/bg-undangan/DSC00063.webp')})` }">
+              :style="{ backgroundImage: `url(${image})` }">
               <div class="h-screen bg-center bg-contain bg-repeat opacity-50"
-                :style="{ backgroundImage: `url(${require('~/assets/bg-undangan/DSC00063.webp')})` }">
-              </div>
-            </div>
-          </slide> -->
-          <slide>
-            <div class="h-screen bg-center bg-contain bg-no-repeat brightness-50"
-              :style="{ backgroundImage: `url(${require('~/assets/bg-undangan/DSC00076.webp')})` }">
-              <div class="h-screen bg-center bg-contain bg-repeat opacity-50"
-                :style="{ backgroundImage: `url(${require('~/assets/bg-undangan/DSC00076.webp')})` }">
-              </div>
-            </div>
-          </slide>
-          <slide>
-            <div class="h-screen bg-center bg-contain bg-no-repeat brightness-50"
-              :style="{ backgroundImage: `url(${require('~/assets/bg-undangan/DSC00109.webp')})` }">
-              <div class="h-screen bg-center bg-contain bg-repeat opacity-50"
-                :style="{ backgroundImage: `url(${require('~/assets/bg-undangan/DSC00109.webp')})` }">
-              </div>
-            </div>
-          </slide>
-          <slide>
-            <div class="h-screen bg-center bg-contain bg-no-repeat brightness-50"
-              :style="{ backgroundImage: `url(${require('~/assets/bg-undangan/DSC00151.webp')})` }">
-              <div class="h-screen bg-center bg-contain bg-repeat opacity-50"
-                :style="{ backgroundImage: `url(${require('~/assets/bg-undangan/DSC00151.webp')})` }">
+                :style="{ backgroundImage: `url(${image})` }">
               </div>
             </div>
           </slide>
@@ -89,16 +65,11 @@ export default {
   data() {
     return {
       open: false,
-      // images: [
-      //   '~/assets/bg-undangan/DSC00063.webp',
-      //   '~/assets/bg-undangan/DSC00076.webp',
-      //   '~/assets/bg-undangan/DSC00109.webp',
-      //   '~/assets/bg-undangan/DSC00151.webp',
-      //   '~/assets/bg-undangan/DSC00161.webp',
-      //   '~/assets/bg-undangan/DSC00164.webp',
-      //   '~/assets/bg-undangan/DSC00167.webp',
-      // ],
+      images: null
     }
+  },
+  async fetch() {
+    this.images = this.$store.state.bgUndangan.webp
   },
   methods: {
     opened() {

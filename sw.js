@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 const options = {"workboxURL":"https://cdn.jsdelivr.net/npm/workbox-cdn@5.1.4/workbox/workbox-sw.js","importScripts":[],"config":{"debug":false},"cacheOptions":{"cacheId":"mine-prod","directoryIndex":"/","revision":"PwSd9dzS1Wj4"},"clientsClaim":true,"skipWaiting":true,"cleanupOutdatedCaches":true,"offlineAnalytics":false,"preCaching":[{"revision":"PwSd9dzS1Wj4","url":"/menikah/?standalone=true"}],"runtimeCaching":[{"urlPattern":"/menikah/_nuxt/","handler":"CacheFirst","method":"GET","strategyPlugins":[]},{"urlPattern":"/menikah/","handler":"NetworkFirst","method":"GET","strategyPlugins":[]}],"offlinePage":null,"pagesURLPattern":"/menikah/","offlineStrategy":"NetworkFirst"}
+=======
+const options = {"workboxURL":"https://cdn.jsdelivr.net/npm/workbox-cdn@5.1.4/workbox/workbox-sw.js","importScripts":[],"config":{"debug":false},"cacheOptions":{"cacheId":"mine-prod","directoryIndex":"/","revision":"RRvF3v60GNIq"},"clientsClaim":true,"skipWaiting":true,"cleanupOutdatedCaches":true,"offlineAnalytics":false,"preCaching":[{"revision":"RRvF3v60GNIq","url":"/menikah/?standalone=true"}],"runtimeCaching":[{"urlPattern":"/menikah/_nuxt/","handler":"CacheFirst","method":"GET","strategyPlugins":[]},{"urlPattern":"/menikah/","handler":"NetworkFirst","method":"GET","strategyPlugins":[]}],"offlinePage":null,"pagesURLPattern":"/menikah/","offlineStrategy":"NetworkFirst"}
+>>>>>>> 47fb928b2fff2691355581346108a97cd7f30662
 
 importScripts(...[options.workboxURL, ...options.importScripts])
 

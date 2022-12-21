@@ -1,4 +1,14 @@
 /*!
+<<<<<<< HEAD
+=======
+ * Vue.js v2.7.13
+ * (c) 2014-2022 Evan You
+ * Released under the MIT License.
+ */
+
+
+/*!
+>>>>>>> 47fb928b2fff2691355581346108a97cd7f30662
  * vue-breakpoint v1.1.0
  * (c) 2018 Jakub Juszczak <jakub@posteo.de>
  * 
@@ -38,6 +48,7 @@
  */
 
 /*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> */
+<<<<<<< HEAD
 
 
 /*!
@@ -45,3 +56,5 @@
  * (c) 2014-2022 Evan You
  * Released under the MIT License.
  */
+=======
+>>>>>>> 47fb928b2fff2691355581346108a97cd7f30662
