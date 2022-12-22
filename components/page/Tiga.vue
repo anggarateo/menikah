@@ -13,13 +13,10 @@
         <div class="h-screen">
             <div class="mapouter w-full h-full p-10">
                 <div class="gmap_canvas w-full h-full">
-                    <iframe class="w-full h-full" id="gmap_canvas"
+                    <iframe class="w-full sm:h-full h-4/5" id="gmap_canvas"
                         src="https://maps.google.com/maps?q=sumariono&t=&z=17&ie=UTF8&iwloc=&output=embed"
                         frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                 </div>
-                <!-- <a href="https://www.whatismyip-address.com">whatismyip-address</a>
-                <br>
-                <a href="https://www.embedgooglemap.net">embedgmaps</a> -->
             </div>
         </div>
     </div>

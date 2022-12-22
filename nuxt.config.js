@@ -45,6 +45,13 @@ export default {
     '@nuxt/postcss8'
   ],
 
+  tailwindcss: {
+    cssPath: '~/plugins/main.css',
+    configPath: 'tailwind.config.js',
+    exposeConfig: false,
+    config: {}
+  },
+
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios

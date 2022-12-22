@@ -9,57 +9,57 @@
                     <!-- pc top navbar -->
                     <button class="mx-4" v-scroll-to="{ el: '#satu', easing: 'ease-in', duration: 1000, offset: -60 }">
                         <font-awesome-icon icon="fa-solid fa-house" class="text-2xl" />
-                        <div>
+                        <!-- <div>
                             Awal
-                        </div>
+                        </div> -->
                     </button>
                     <button class="mx-4" v-scroll-to="{ el: '#dua', easing: 'ease-in', duration: 1000, offset: -60 }">
                         <font-awesome-icon icon="fa-solid fa-venus-mars" class="text-2xl" />
-                        <div>
+                        <!-- <div>
                             Kedua
-                        </div>
+                        </div> -->
                     </button>
                     <button class="mx-4" v-scroll-to="{ el: '#tiga', easing: 'ease-in', duration: 1000, offset: -60 }">
                         <font-awesome-icon icon="fa-solid fa-map-location-dot" class="text-2xl" />
-                        <div>
+                        <!-- <div>
                             Ketiga
-                        </div>
+                        </div> -->
                     </button>
                     <button class="mx-4" v-scroll-to="{ el: '#empat', easing: 'ease-in', duration: 1000, offset: -60 }">
                         <font-awesome-icon icon="fa-solid fa-photo-film" class="text-2xl" />
-                        <div>
+                        <!-- <div>
                             Keempat
-                        </div>
+                        </div> -->
                     </button>
                 </div>
                 <!-- mobile bottom navbar -->
                 <div class="flex text-white md:hidden block w-full justify-center">
                     <button class="mx-4" v-scroll-to="{ el: '#satu', easing: 'ease-in', duration: 1000 }">
                         <font-awesome-icon icon="fa-solid fa-house" class="text-2xl" />
-                        <div>
+                        <!-- <div>
                             Awal
-                        </div>
+                        </div> -->
                     </button>
                     <button class="mx-4" v-scroll-to="{ el: '#dua', easing: 'ease-in', duration: 1000 }">
                         <font-awesome-icon icon="fa-solid fa-venus-mars" class="text-2xl" />
-                        <div>
+                        <!-- <div>
                             Kedua
-                        </div>
+                        </div> -->
                     </button>
                     <div class="text-center text-yellow-500 nama m-2 leading-none">
                         Ema & Teo
                     </div>
                     <button class="mx-4" v-scroll-to="{ el: '#tiga', easing: 'ease-in', duration: 1000 }">
                         <font-awesome-icon icon="fa-solid fa-map-location-dot" class="text-2xl" />
-                        <div>
+                        <!-- <div>
                             Ketiga
-                        </div>
+                        </div> -->
                     </button>
                     <button class="mx-4" v-scroll-to="{ el: '#empat', easing: 'ease-in', duration: 1000 }">
                         <font-awesome-icon icon="fa-solid fa-photo-film" class="text-2xl" />
-                        <div>
+                        <!-- <div>
                             Keempat
-                        </div>
+                        </div> -->
                     </button>
                 </div>
             </div>
