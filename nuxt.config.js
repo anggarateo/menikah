@@ -14,15 +14,14 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: './t&e.png' },
-      { rel: 'stylesheet', href: "https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap&family=Parisienne&display=swap" },
-      { rel: 'stylesheet', type: 'text/css', href: './tailwind.css' }
+      { rel: 'stylesheet', href: "https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap&family=Parisienne&display=swap" }
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '@fortawesome/fontawesome-svg-core/styles.css',
-    '~/static/tailwind.css'
+    '~/plugins/main.css',
+    '@fortawesome/fontawesome-svg-core/styles.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -42,13 +41,9 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxt/postcss8'
   ],
-
-  tailwindcss: {
-    cssPath: '~/static/tailwind.css',
-    configPath: 'tailwind.config.js'
-  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -74,5 +69,11 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
+    }
   }
 }
