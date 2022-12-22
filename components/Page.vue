@@ -9,12 +9,8 @@
         <div id="tiga" class="flex py-16">
             <Tiga />
         </div>
-        <!-- <div id="empat" class="flex flex-row w-full h-screen pb-16"> -->
         <div id="empat" class="flex flex-row w-screen h-screen pb-16">
             <Empat />
-            <!-- <div class="text-4xl border-2 border-amber-500 w-screen bg-teal-500">
-                4
-            </div> -->
         </div>
     </div>
 </template>
