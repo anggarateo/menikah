@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-cover" style="background-image: url('/bgmine4.webp')">
+    <div class="bg-cover" style="background-image: url('./bgmine4.webp')">
         <div id="satu" class="flex flex-row w-screen h-screen pb-16">
             <Satu />
         </div>
