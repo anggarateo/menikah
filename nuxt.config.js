@@ -41,8 +41,9 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
-    // '@nuxtjs/tailwindcss',
-    '@nuxt/postcss8'
+    '@nuxtjs/tailwindcss',
+    '@nuxt/postcss8',
+    '@nuxt/image'
   ],
 
   tailwindcss: {
@@ -50,6 +51,19 @@ export default {
     configPath: 'tailwind.config.js',
     exposeConfig: false,
     config: {}
+  },
+
+  image: {
+    // The screen sizes predefined by `@nuxt/image`:
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536,
+      '2xl': 1536
+    },
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
