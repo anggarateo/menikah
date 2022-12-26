@@ -25,21 +25,31 @@
                 </div>
                 <div class="flex flex-col w-2/3">
                     <div>Minggu</div>
-                    <div>29 Januari 2022</div>
+                    <div>2023</div>
                     <div>13.00 WIB</div>
                     <div>Mempelai Perempuan</div>
                 </div>
             </div>
             <div class="my-4">
-                <vac :end-time="startTime" class="text-slate-500 text-4xl">
+                <vac :end-time="startTime" class="text-slate-500 text-4xl md:text-6xl">
                     <span slot="process" slot-scope="{ timeObj }">
-                        <span class="flex flex-row">
-                            <span class="flex flex-col w-1/2">{{ `${timeObj.d} hari` }}</span>
-                            <span class="flex flex-col w-1/2">{{ `${timeObj.h} jam` }}</span>
-                        </span>
-                        <span class="flex flex-row">
-                            <span class="flex flex-col w-1/2">{{ `${timeObj.m} menit` }}</span>
-                            <span class="flex flex-col w-1/2">{{ `${timeObj.s} detik` }}</span>
+                        <span class="md:flex md:flex-row justify-center">
+                            <span class="flex flex-row">
+                                <span class="sm:flex sm:flex-col w-1/2 md:w-fit md:px-2">
+                                    {{ `${timeObj.s} hari` }}
+                                </span>
+                                <span class="sm:flex sm:flex-col w-1/2 md:w-fit md:px-2">
+                                    {{ `${timeObj.h} jam` }}
+                                </span>
+                            </span>
+                            <span class="flex flex-row">
+                                <span class="sm:flex sm:flex-col w-1/2 md:w-fit md:px-2">
+                                    {{ `${timeObj.m} menit` }}
+                                </span>
+                                <span class="sm:flex sm:flex-col w-1/2 md:w-fit md:px-2">
+                                    {{ `${timeObj.s} detik` }}
+                                </span>
+                            </span>
                         </span>
                         <span class="flex flex-row justify-center p-2">Menuju Sah</span>
                     </span>
