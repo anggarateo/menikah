@@ -11,7 +11,7 @@
             </div>
             <div class="md:flex md:flex-col sm:h-1/2 p-4 md:w-1/2 text-center md:text-left">
                 <div data-aos="fade-up" data-aos-duration="1500"
-                    class="flex flex-row md:text-4xl text-2xl font-bold justify-center">
+                    class="flex flex-row md:text-4xl text-2xl font-bold justify-center md:justify-start">
                     Ema Ruly Pratiwi
                 </div>
                 <div data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1500"
