@@ -3,10 +3,10 @@
         <ClientOnly>
             <carousel :per-page="1" :autoplay="true" :loop="true" :speed="3000" :autoplay-timeout="6000"
                 :autoplay-hover-pause="false">
-                <slide v-for="(image, i) in images" :key="i">
-                    <!-- <div class="w-full h-screen bg-center bg-contain" :style="{ backgroundImage: `url(${image})` }"
+                <!-- <div class="w-full h-screen bg-center bg-contain" :style="{ backgroundImage: `url(${image})` }"
                         @click="index = i">
                     </div> -->
+                <slide v-for="(image, i) in images" :key="i">
                     <nuxt-img :src="image" sizes="sm:100vw md:25vw" loading="lazy" @click="index = i"
                         class="cursor-pointer" />
                 </slide>

@@ -6,7 +6,7 @@
         <div id="dua" class="flex pb-16">
             <Dua />
         </div>
-        <div id="tiga" class="flex py-16">
+        <div id="tiga" class="flex pb-16">
             <Tiga />
         </div>
         <div id="empat" class="flex flex-row w-screen h-screen pb-16">
