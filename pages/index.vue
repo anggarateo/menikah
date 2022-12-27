@@ -24,7 +24,7 @@
               </div>
             </div> -->
             <div class="flex justify-center">
-              <nuxt-img preload :src="image" fit="cover" class="h-screen brightness-50" />
+              <nuxt-img preload :src="image" fit="cover" class="h-screen opacity-50" />
             </div>
           </slide>
         </carousel>
