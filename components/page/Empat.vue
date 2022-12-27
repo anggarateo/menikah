@@ -2,7 +2,7 @@
     <div class="w-full h-full">
         <ClientOnly>
             <carousel :per-page="1" :autoplay="true" :loop="true" :speed="3000" :autoplay-timeout="6000"
-                :autoplay-hover-pause="false" pagination-active-color="#334155">
+                pagination-active-color="#334155" :mouse-drag="false" :touch-drag="false">
                 <!-- <div class="w-full h-screen bg-center bg-contain" :style="{ backgroundImage: `url(${image})` }"
                         @click="index = i">
                     </div> -->
