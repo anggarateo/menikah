@@ -5,13 +5,13 @@
                 <div data-aos="fade-right" data-aos-duration="1500" class="flex h-full sm:flex-row w-full">
                     <div class="w-full h-full bg-center bg-contain bg-no-repeat"
                         :style="{ backgroundImage: `url(${mempelai.putri})` }">
-                        <div class="block md:hidden text-2xl font-medium p-4 text-center">Mempelai Perempuan</div>
+                        <div class="block md:hidden text-5xl font-medium p-4 text-center nama">Mempelai Perempuan</div>
                     </div>
                 </div>
             </div>
             <div class="md:flex md:flex-col sm:h-1/2 p-4 md:w-1/2 text-center md:text-left">
                 <div data-aos="fade-up" data-aos-duration="1500"
-                    class="flex flex-row md:text-4xl text-2xl font-bold justify-center md:justify-start">
+                    class="flex flex-row md:text-6xl text-5xl nama justify-center md:justify-start">
                     Ema Ruly Pratiwi
                 </div>
                 <div data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1500"
@@ -21,11 +21,12 @@
             </div>
         </div>
         <div data-aos="zoom-in" data-aos-duration="1000" class="flex justify-center py-8">
-            <font-awesome-icon icon="fa-solid fa-venus-mars" class="text-6xl text-slate-500" />
+            <font-awesome-icon icon="fa-solid fa-venus-mars" class="text-6xl text-slate-700" />
         </div>
         <div class="md:flex md:flex-wrap items-center">
             <div class="md:flex md:flex-col sm:h-1/2 p-4 md:w-1/2 text-center md:text-right">
-                <div data-aos="fade-up" data-aos-duration="1500" class="flex flex-row md:text-4xl text-2xl font-bold">
+                <div data-aos="fade-up" data-aos-duration="1500"
+                    class="flex flex-row md:text-6xl text-5xl nama justify-center md:justify-end">
                     Teo Anggara Nur Ramadhana
                 </div>
                 <div data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1500"
@@ -38,7 +39,7 @@
                 <div data-aos="fade-down" data-aos-duration="1500" class="flex h-full sm:flex-row w-full">
                     <div class="w-full h-full bg-center bg-contain bg-no-repeat"
                         :style="{ backgroundImage: `url(${mempelai.putra})` }">
-                        <div class="block md:hidden text-2xl font-medium p-4 text-center">Mempelai Laki-laki</div>
+                        <div class="block md:hidden text-5xl font-medium p-4 text-center nama">Mempelai Laki-laki</div>
                     </div>
                 </div>
             </div>

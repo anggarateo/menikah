@@ -1,6 +1,6 @@
 <template>
     <div class="md:sticky fixed inset-x-0 md:top-0 bottom-0 z-40">
-        <nav class="bg-slate-500 h-16 opacity-70 md:opacity-100">
+        <nav class="bg-slate-700 h-16 opacity-70 md:opacity-100">
             <div class="flex flex-row justify-between px-8 h-full items-center">
                 <div class="text-xl text-yellow-500 md:block hidden nama">
                     Ema & Teo

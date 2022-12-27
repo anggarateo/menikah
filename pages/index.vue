@@ -15,13 +15,16 @@
       </div>
       <ClientOnly>
         <carousel :per-page="1" :autoplay="true" :loop="true" :pagination-enabled="false" :speed="3000"
-          :autoplay-timeout="6000" :autoplay-hover-pause="false">
-          <slide v-for="(image, i) in images" :key="i">
-            <div class="h-screen bg-center bg-contain bg-no-repeat brightness-50"
+          :autoplay-timeout="6000" :autoplay-hover-pause="false" :mouse-drag="false" :touch-drag="false">
+          <slide v-for="(image, i) in images" :key="i" class="bg-slate-700">
+            <!-- <div class="h-screen bg-center bg-contain bg-no-repeat brightness-50"
               :style="{ backgroundImage: `url(${image})` }">
               <div class="h-screen bg-center bg-contain bg-repeat opacity-50"
                 :style="{ backgroundImage: `url(${image})` }">
               </div>
+            </div> -->
+            <div class="flex justify-center">
+              <nuxt-img preload :src="image" fit="cover" class="h-screen brightness-50" />
             </div>
           </slide>
         </carousel>
@@ -93,13 +96,17 @@ export default {
     width: 500px; */
 }
 
+.courier {
+  font-family: 'Courier Prime', monospace;
+}
+
 html,
 body {
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .nama {
-  font-family: 'Parisienne', cursive;
+  font-family: 'Tangerine', cursive;
 }
 
 /* style transisi buka */

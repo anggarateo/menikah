@@ -1,10 +1,19 @@
 <template>
     <div class="w-full h-full md:p-8 p-4 md:text-4xl text-2xl">
         <div class="h-screen">
-            <div data-aos="fade-right" data-aos-duration="1500" class="md:flex md:flex-wrap text-center">
-                <div>Kami mengharap kehadiran Bapak/Ibu/Saudara(i) pada :</div>
+            <div data-aos="fade-right" data-aos-duration="1500" class="py-1 md:flex md:flex-wrap text-center">
+                <div>Kami yang berbahagia mengharap kehadiran Bapak/Ibu/Saudara(i)</div>
             </div>
-            <div data-aos="fade-right" data-aos-duration="1500" class="flex flex-row p-4 gap-x-2">
+            <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500"
+                class="py-1 md:flex md:flex-wrap text-center">
+                <div>pada Hari Minggu, tgl bulan 2023 pukul 13.00 WIB</div>
+            </div>
+            <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1000"
+                class="py-1 md:flex md:flex-wrap text-center">
+                <div>yang bertempat di kediaman mempelai perempuan, Dsn. Gebyaran Ds. Puhjarak RT/RW 03/06 Kec. Plemahan
+                    Kab. Kediri</div>
+            </div>
+            <!-- <div data-aos="fade-right" data-aos-duration="1500" class="flex flex-row p-4 gap-x-2">
                 <div class="flex flex-col w-1/3">
                     <div class="flex justify-between">
                         <span>Hari</span>
@@ -29,9 +38,9 @@
                     <div>13.00 WIB</div>
                     <div>Mempelai Perempuan</div>
                 </div>
-            </div>
-            <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500" class="my-4">
-                <vac :end-time="startTime" class="text-slate-500 text-4xl md:text-6xl">
+            </div> -->
+            <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="2000" class="my-4">
+                <vac :end-time="startTime" class="text-slate-700 text-4xl md:text-6xl">
                     <span slot="process" slot-scope="{ timeObj }">
                         <span class="md:flex md:flex-row justify-center">
                             <span class="flex flex-row">

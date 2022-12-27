@@ -9,8 +9,11 @@
         <div id="tiga" class="flex pb-16">
             <Tiga />
         </div>
-        <div id="empat" class="flex flex-row w-screen h-screen pb-16">
+        <div id="empat" class="flex flex-row w-screen h-screen py-16 md:py-2">
             <Empat />
+        </div>
+        <div class="md:block hidden text-3xl courier text-center">
+            {{ '&lt;teo & ema /&gt;' }}
         </div>
     </div>
 </template>
