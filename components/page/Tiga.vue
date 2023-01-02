@@ -1,51 +1,37 @@
 <template>
-    <div class="w-full h-full md:p-8 p-4 md:text-4xl text-2xl">
-        <div class="h-screen">
-            <div data-aos="fade-right" data-aos-duration="1500" class="py-1 md:flex md:flex-wrap text-center">
-                <div>Kami yang berbahagia mengharap kehadiran Bapak/Ibu/Saudara(i)</div>
+    <div class="w-full h-full md:p-8 p-4 md:text-xl text-lg">
+        <div class="h-screen py-4">
+            <!-- <div data-aos="fade-right" data-aos-duration="1500" class="md:flex md:flex-wrap text-center justify-center">
+                <div class="py-2">Kami yang berbahagia mengharap kehadiran Bapak/Ibu/Saudara(i)</div>
             </div>
             <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500"
-                class="py-1 md:flex md:flex-wrap text-center">
-                <div>pada Hari Minggu, tgl bulan 2023 pukul 13.00 WIB</div>
+                class="md:flex md:flex-wrap text-center justify-center">
+                <div class="py-2">pada Hari Minggu, 29 Januari 2023 pukul 13.00 s/d 15.00 WIB</div>
             </div>
             <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1000"
-                class="py-1 md:flex md:flex-wrap text-center">
-                <div>yang bertempat di kediaman mempelai perempuan, Dsn. Gebyaran Ds. Puhjarak RT/RW 03/06 Kec. Plemahan
+                class="md:flex md:flex-wrap text-center justify-center">
+                <div class="py-2">yang bertempat di kediaman mempelai perempuan, Dsn. Gebyaran Ds. Puhjarak RT/RW 03/06
+                    Kec. Plemahan
                     Kab. Kediri</div>
-            </div>
-            <!-- <div data-aos="fade-right" data-aos-duration="1500" class="flex flex-row p-4 gap-x-2">
-                <div class="flex flex-col w-1/3">
-                    <div class="flex justify-between">
-                        <span>Hari</span>
-                        <span>:</span>
-                    </div>
-                    <div class="flex justify-between">
-                        <span>Tanggal</span>
-                        <span>:</span>
-                    </div>
-                    <div class="flex justify-between">
-                        <span>Waktu</span>
-                        <span>:</span>
-                    </div>
-                    <div class="flex justify-between">
-                        <span>Tempat</span>
-                        <span>:</span>
-                    </div>
-                </div>
-                <div class="flex flex-col w-2/3">
-                    <div>Minggu</div>
-                    <div>2023</div>
-                    <div>13.00 WIB</div>
-                    <div>Mempelai Perempuan</div>
-                </div>
             </div> -->
-            <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="2000" class="my-4">
-                <vac :end-time="startTime" class="text-slate-700 text-4xl md:text-6xl">
+            <div data-aos="fade-right" data-aos-duration="1500"
+                class="flex flex-wrap gap-y-6 text-center justify-center">
+                <div class="w-full">Kami yang berbahagia mengharap kehadiran Bapak/Ibu/Saudara(i):</div>
+                <div class="w-full">Hari Minggu, 29 Januari 2023 <br />pukul 13.00 s.d. 15.00 WIB</div>
+                <div class="w-full">Di kediaman mempelai perempuan: <br />Dusun Gebyaran Desa Puhjarak
+                    Kecamatan Plemahan
+                    <br class="md:hidden block" />Kabupaten Kediri
+                </div>
+            </div>
+            <div class="md:hidden block py-4"></div>
+            <!-- <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="2000" class="mt-12"> -->
+            <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500" class="mt-12">
+                <vac :end-time="startTime" class="text-slate-700 text-3xl md:text-5xl text-center">
                     <span slot="process" slot-scope="{ timeObj }">
                         <span class="md:flex md:flex-row justify-center">
                             <span class="flex flex-row">
                                 <span class="sm:flex sm:flex-col w-1/2 md:w-fit md:px-2">
-                                    {{ `${timeObj.s} hari` }}
+                                    {{ `${timeObj.d} hari` }}
                                 </span>
                                 <span class="sm:flex sm:flex-col w-1/2 md:w-fit md:px-2">
                                     {{ `${timeObj.h} jam` }}
@@ -64,8 +50,8 @@
                     </span>
                 </vac>
                 <div class="flex justify-center">
-                    <div class="text-center p-4 bg-white opacity-60 hover:opacity-75 rounded-xl cursor-pointer my-8"
-                        @click="addToCalendar">{{ 'Simpan di Tanggalan Google' }}</div>
+                    <div class="text-center p-4 bg-slate-500 text-white opacity-60 hover:opacity-75 rounded-xl cursor-pointer my-8"
+                        @click="addToCalendar">{{ 'Simpan di Kalender Google' }}</div>
                 </div>
             </div>
         </div>
@@ -78,7 +64,7 @@
                 </div>
             </div>
             <div class="flex justify-center">
-                <div class="md:hidden block text-center p-4 bg-white opacity-60 hover:opacity-75 rounded-xl cursor-pointer m-4"
+                <div class="md:hidden block text-center p-4 bg-slate-500 text-white opacity-60 hover:opacity-75 rounded-xl cursor-pointer m-4"
                     @click="openMap">Buka
                     Map</div>
             </div>
@@ -94,16 +80,16 @@ export default {
         return {
             googleCalendarLink: null,
             startTime: new Date("2023-01-29 8:00 am"),
-            endTime: new Date("2023-01-29 8:00 pm"),
-            title: "Nikahnya Ema Ruly Pratiwi & Teo Anggara",
-            details: "Kehormatan bagi kami atas kehadiran Bapak/Ibu/Saudara",
+            endTime: new Date("2023-01-29 3:00 pm"),
+            title: "Nikahnya Ema Ruly %26 Teo Anggara",
+            details: "Kehormatan bagi kami atas kehadiran Bapak/Ibu/Saudara(i)<br><br><br>Ema Ruly %26 Teo Anggara",
             location: "Plemahan, Kediri",
             mapDir: null
         }
     },
     methods: {
         openMap() {
-            this.mapDir = 'https://maps.google.com/maps/dir//Rumah+Ruly+Jalan+Puntodewo+No.32+Gebyaran,+Puhjarak+Kec.+Plemahan,+Kabupaten+Kediri,+Indonesia/@-7.7305029,112.1504451,15z/data=!4m5!4m4!1m0!1m2!1m1!1s0x2e785de9f20fe349:0x162755f7b9c273be'
+            this.mapDir = 'https://maps.google.com/maps?ll=-7.730503,112.150445&z=15&t=m&hl=en&gl=US&mapclient=embed&cid=1596339115387941822'
             window.open(this.mapDir, "_blank")
         },
         addToCalendar() {
@@ -114,7 +100,7 @@ export default {
             if (!this.title)
                 return console.warn("prop: title is required");
             // this.googleCalendarLink = `http://www.google.com/calendar/event?action=TEMPLATE&text=${this.title || ""}&dates=${this.formatDate(this.startTime)}/${this.formatDate(this.endTime)}&details=${this.details || ""}&location=${this.location || ""}`
-            this.googleCalendarLink = `https://www.google.com/calendar/event?action=TEMPLATE&text=${this.title}&details=${this.details}&location=${this.location}&dates=20230129T010000Z/20230129T130000Z`;
+            this.googleCalendarLink = `https://www.google.com/calendar/event?action=TEMPLATE&text=${this.title}&details=${this.details}&location=${this.location}&dates=20230129T010000Z/20230129T080000Z`;
             // prod
             // this.googleCalendarLink = 'https://www.google.com/calendar/event?action=TEMPLATE&text=Nikahnya Ema Ruly Pratiwi & Teo Anggara&details=Kehormatan bagi kami atas kehadiran Bapak/Ibu/Saudara&location=Plemahan, Kediri&dates=20230226T010000Z/20230226T130000Z'
             // dev

@@ -2,14 +2,16 @@
     <div class="w-full h-full">
         <ClientOnly>
             <carousel :per-page="1" :autoplay="true" :loop="true" :speed="3000" :autoplay-timeout="6000"
-                pagination-active-color="#334155" :mouse-drag="false" :touch-drag="false">
+                pagination-active-color="#334155" pagination-color="#88aee3" :mouse-drag="false" :touch-drag="false">
                 <!-- <div class="w-full h-screen bg-center bg-contain" :style="{ backgroundImage: `url(${image})` }"
                         @click="index = i">
                     </div> -->
                 <slide v-for="(image, i) in images" :key="i">
                     <div class="flex justify-center">
-                        <nuxt-img :src="image" sizes="sm:100vw md:25vw" loading="lazy" @click="index = i"
-                            class="cursor-pointer" />
+                        <!-- <nuxt-img :src="image" sizes="sm:100vw md:25vw" loading="lazy" @click="index = i"
+                            class="cursor-pointer" /> -->
+                        <nuxt-img :src="image" loading="lazy" @click="index = i"
+                            class="cursor-pointer h-[30rem] md:h-[26rem]" />
                     </div>
                 </slide>
             </carousel>

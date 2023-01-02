@@ -1,8 +1,9 @@
 export default {
   target: 'static',
-  router: {
-    base: '/menikah/'
-  },
+  // ssr: false,
+  // router: {
+  //   base: '/menikah/'
+  // },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: '<teo & ema />',

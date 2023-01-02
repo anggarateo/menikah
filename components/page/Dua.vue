@@ -15,7 +15,7 @@
                     Ema Ruly Pratiwi
                 </div>
                 <div data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1500"
-                    class="flex flex-row md:text-2xl text-xl p-2">
+                    class="flex flex-row md:text-xl text-lg p-2">
                     Putri ke-empat dari pasangan (Alm.) Bapak Purwaji dan Ibu Suryani
                 </div>
             </div>
@@ -30,7 +30,7 @@
                     Teo Anggara Nur Ramadhana
                 </div>
                 <div data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1500"
-                    class="flex flex-row md:text-2xl text-xl p-2">
+                    class="flex flex-row md:text-xl text-lg p-2">
                     Putra pertama dari pasangan Bapak Sumaryono dan Ibu Titin Sunarminingsih
                 </div>
             </div>
