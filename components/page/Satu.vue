@@ -6,8 +6,8 @@
         </div>
         <div
             class="absolute md:top-1/2 top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 text-6xl font-black text-center nama text-white">
-            <br />
-            <br />
+            <br class="md:hidden block" />
+            <br class="md:hidden block" />
             &
         </div>
         <div
