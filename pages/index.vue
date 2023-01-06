@@ -129,6 +129,7 @@ body {
   height: 50%;
   transition-property: opacity, transform;
   transition-timing-function: ease-in-out;
+  z-index: 999;
 }
 
 .v-enter-active::before,
