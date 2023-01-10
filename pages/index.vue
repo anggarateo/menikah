@@ -13,9 +13,11 @@
         class="fixed top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/5 z-40 text-xl text-gray-700 text-center cursor-pointer bg-white md:opacity-50 hover:opacity-75 opacity-75 rounded-full p-2 md:p-4">
         Buka Undangan
       </div>
-      <div class="flex justify-center bg-gray-800">
-        <nuxt-img preload loading="lazy" :src="image" fit="cover" class="h-screen opacity-50" />
+      <div class="w-screen h-screen bg-center bg-contain" :style="{ backgroundImage: `url(${image})` }">
       </div>
+      <!-- <div class="flex justify-center bg-gray-800">
+        <nuxt-img preload loading="lazy" :src="image" fit="cover" class="h-screen opacity-50" />
+      </div> -->
     </div>
 
     <div v-if="open">

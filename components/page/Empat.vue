@@ -2,7 +2,7 @@
     <div class="w-full h-full">
         <ClientOnly>
             <carousel :per-page="1" :autoplay="true" :loop="true" :speed="3000" :autoplay-timeout="6000"
-                pagination-active-color="#334155" pagination-color="#88aee3" :mouse-drag="false">
+                pagination-active-color="#1f2937" pagination-color="#9ca3af" :mouse-drag="false">
                 <slide v-for="(image, i) in images" :key="i">
                     <div class="flex justify-center">
                         <nuxt-img :src="image" loading="lazy" @click="index = i"
