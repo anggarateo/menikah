@@ -1,6 +1,6 @@
 <template>
     <!-- <div class="bg-cover" style="background-image: url('./bgmine4.webp')"> -->
-    <div class="bg-slate-100">
+    <div class="bg-gray-100">
         <div id="satu" class="flex flex-row w-screen h-screen pb-16">
             <Satu />
         </div>
@@ -14,7 +14,7 @@
             <Empat />
         </div>
         <div class="md:block hidden text-3xl courier text-center">
-            {{ '&lt;teo & ema /&gt;' }}
+            {{ '&lt;ema & teo /&gt;' }}
         </div>
     </div>
 </template>

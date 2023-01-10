@@ -26,7 +26,7 @@
             <div class="md:hidden block py-4"></div>
             <!-- <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="2000" class="mt-12"> -->
             <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500" class="mt-12">
-                <vac :end-time="startTime" class="text-slate-700 text-3xl md:text-5xl text-center">
+                <vac :end-time="startTime" class="text-gray-700 text-3xl md:text-5xl text-center">
                     <span slot="process" slot-scope="{ timeObj }">
                         <span class="md:flex md:flex-row justify-center">
                             <span class="flex flex-row">
@@ -50,7 +50,7 @@
                     </span>
                 </vac>
                 <div class="flex justify-center">
-                    <div class="text-center p-4 bg-slate-500 text-white opacity-60 hover:opacity-75 rounded-xl cursor-pointer my-8"
+                    <div class="text-center p-4 bg-gray-500 text-white opacity-60 hover:opacity-75 rounded-xl cursor-pointer my-8"
                         @click="addToCalendar">{{ 'Simpan di Kalender Google' }}</div>
                 </div>
             </div>
@@ -64,7 +64,7 @@
                 </div>
             </div>
             <div class="flex justify-center">
-                <div class="md:hidden block text-center p-4 bg-slate-500 text-white opacity-60 hover:opacity-75 rounded-xl cursor-pointer m-4"
+                <div class="md:hidden block text-center p-4 bg-gray-500 text-white opacity-60 hover:opacity-75 rounded-xl cursor-pointer m-4"
                     @click="openMap">Buka
                     Map</div>
             </div>

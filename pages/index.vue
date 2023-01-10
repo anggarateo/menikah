@@ -2,55 +2,55 @@
   <div class="bg-gray-200">
     <div v-if="!open">
       <div
-        class="fixed top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/4 z-40 text-2xl text-white text-center leading-none">
+        class="fixed top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/5 z-40 text-2xl text-white text-center leading-none">
         Kepada Yth Bapak/Ibu/Saudara(i):
       </div>
       <div
-        class="fixed top-[37%] md:top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-[37%] md:-translate-y-1/3 z-40 text-3xl text-white text-center leading-none font-bold">
+        class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-40 text-3xl text-white text-center leading-none font-bold">
         {{ $route.query.to }}
       </div>
       <div @click="opened()"
-        class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-40 text-xl text-gray-500 text-center cursor-pointer bg-white opacity-50 hover:opacity-75 rounded-full p-2 md:p-4">
+        class="fixed top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/5 z-40 text-xl text-gray-700 text-center cursor-pointer bg-white md:opacity-50 hover:opacity-75 opacity-75 rounded-full p-2 md:p-4">
         Buka Undangan
       </div>
-      <ClientOnly>
+      <!-- <ClientOnly>
         <carousel :per-page="1" :autoplay="true" :loop="true" :pagination-enabled="false" :speed="3000"
           :autoplay-timeout="6000" :autoplay-hover-pause="false" :mouse-drag="false" :touch-drag="false">
-          <slide v-for="(image, i) in images" :key="i" class="bg-slate-700">
-            <!-- <div class="h-screen bg-center bg-contain bg-no-repeat brightness-50"
+          <slide v-for="(image, i) in images" :key="i" class="bg-slate-700"> -->
+      <!-- <div class="h-screen bg-center bg-contain bg-no-repeat brightness-50"
               :style="{ backgroundImage: `url(${image})` }">
               <div class="h-screen bg-center bg-contain bg-repeat opacity-50"
                 :style="{ backgroundImage: `url(${image})` }">
               </div>
             </div> -->
-            <div class="flex justify-center">
-              <nuxt-img preload loading="lazy" :src="image" fit="cover" class="h-screen opacity-50" />
-            </div>
-          </slide>
+      <div class="flex justify-center bg-gray-800">
+        <nuxt-img preload loading="lazy" :src="images[0]" fit="cover" class="h-screen opacity-50" />
+      </div>
+      <!-- </slide>
         </carousel>
-      </ClientOnly>
+      </ClientOnly> -->
     </div>
 
-    <Transition>
-      <div v-if="open">
-        <showAt breakpoint="mediumAndAbove">
-          <Header />
-          <Page />
-        </showAt>
-        <hideAt breakpoint="mediumAndBelow">
-          <Page />
-          <Header />
-        </hideAt>
-        <showAt breakpoint="mediumAndBelow">
-          <Page />
-          <Header />
-        </showAt>
-        <hideAt breakpoint="mediumAndAbove">
-          <Header />
-          <Page />
-        </hideAt>
-      </div>
-    </Transition>
+    <!-- <Transition> -->
+    <div v-if="open">
+      <showAt breakpoint="mediumAndAbove">
+        <Header />
+        <Page />
+      </showAt>
+      <hideAt breakpoint="mediumAndBelow">
+        <Page />
+        <Header />
+      </hideAt>
+      <showAt breakpoint="mediumAndBelow">
+        <Page />
+        <Header />
+      </showAt>
+      <hideAt breakpoint="mediumAndAbove">
+        <Header />
+        <Page />
+      </hideAt>
+    </div>
+    <!-- </Transition> -->
   </div>
 </template>
 
@@ -110,7 +110,7 @@ body {
 }
 
 /* style transisi buka */
-.v-enter-active,
+/* .v-enter-active,
 .v-leave-active {
   transition-duration: 1600ms;
 }
@@ -181,7 +181,7 @@ body {
 .v-enter-to::after {
   transform: scaleX(0);
   transform-origin: left;
-}
+} */
 
 /* style transisi buka */
 </style>

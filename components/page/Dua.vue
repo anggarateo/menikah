@@ -21,7 +21,7 @@
             </div>
         </div>
         <div data-aos="zoom-in" data-aos-duration="1000" class="flex justify-center py-8">
-            <font-awesome-icon icon="fa-solid fa-venus-mars" class="text-6xl text-slate-700" />
+            <font-awesome-icon icon="fa-solid fa-venus-mars" class="text-6xl text-gray-700" />
         </div>
         <div class="md:flex md:flex-wrap items-center">
             <div class="md:flex md:flex-col sm:h-1/2 p-4 md:w-1/2 text-center md:text-right">

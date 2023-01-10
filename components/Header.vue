@@ -1,8 +1,8 @@
 <template>
     <div class="md:sticky fixed inset-x-0 md:top-0 bottom-0 z-40">
-        <nav class="bg-slate-700 h-16 opacity-70 md:opacity-100">
+        <nav class="bg-gray-700 h-16 opacity-70 md:opacity-100">
             <div class="flex flex-row justify-between px-8 h-full items-center">
-                <div class="text-6xl text-yellow-500 md:block hidden nama">
+                <div class="text-6xl text-white md:block hidden nama">
                     Ema & Teo
                 </div>
                 <div class="flex text-white md:block hidden">
@@ -46,7 +46,7 @@
                             Kedua
                         </div> -->
                     </button>
-                    <div class="text-center text-yellow-500 nama mx-2 leading-none text-[23px]">
+                    <div class="text-center text-white nama mx-2 leading-none text-[23px]">
                         Ema & Teo
                     </div>
                     <button class="mx-4" v-scroll-to="{ el: '#tiga', easing: 'ease-in', duration: 1000 }">
