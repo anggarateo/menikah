@@ -14,30 +14,20 @@
             class="absolute top-2/3 left-[40%] md:left-1/2 transform -translate-x-[30%] md:-translate-x-1/2 -translate-y-1/3 z-30 text-6xl font-black text-center nama text-white">
             Teo Anggara Nur Ramadhana
         </div>
-        <!-- <ClientOnly>
-            <carousel :per-page="1" :autoplay="true" :loop="true" :pagination-enabled="false" :speed="3000"
-                :autoplay-timeout="6000" :autoplay-hover-pause="false" :mouse-drag="false" :touch-drag="false">
-                <slide v-for="(image, i) in images" :key="i" class="bg-slate-700"> -->
-        <!-- <div class="w-full h-screen bg-center bg-contain bg-repeat brightness-50"
-                        :style="{ backgroundImage: `url(${image})` }">
-                    </div> -->
         <div class="flex justify-center bg-gray-800">
-            <nuxt-img preload :src="images[1]" fit="cover" class="h-screen opacity-50" />
+            <nuxt-img preload :src="image" fit="cover" class="h-screen opacity-50" />
         </div>
-        <!-- </slide>
-            </carousel>
-        </ClientOnly> -->
     </div>
 </template>
 <script>
 export default {
     data() {
         return {
-            images: null
+            image: null
         }
     },
     async fetch() {
-        this.images = this.$store.state.bgUndangan.webp
+        this.image = this.$store.state.bgUndangan.home
     }
 }
 </script>

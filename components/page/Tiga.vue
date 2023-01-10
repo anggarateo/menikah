@@ -1,19 +1,6 @@
 <template>
     <div class="w-full h-full md:p-8 p-4 md:text-xl text-lg">
         <div class="h-screen py-4">
-            <!-- <div data-aos="fade-right" data-aos-duration="1500" class="md:flex md:flex-wrap text-center justify-center">
-                <div class="py-2">Kami yang berbahagia mengharap kehadiran Bapak/Ibu/Saudara(i)</div>
-            </div>
-            <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500"
-                class="md:flex md:flex-wrap text-center justify-center">
-                <div class="py-2">pada Hari Minggu, 29 Januari 2023 pukul 13.00 s/d 15.00 WIB</div>
-            </div>
-            <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1000"
-                class="md:flex md:flex-wrap text-center justify-center">
-                <div class="py-2">yang bertempat di kediaman mempelai perempuan, Dsn. Gebyaran Ds. Puhjarak RT/RW 03/06
-                    Kec. Plemahan
-                    Kab. Kediri</div>
-            </div> -->
             <div data-aos="fade-right" data-aos-duration="1500"
                 class="flex flex-wrap gap-y-6 text-center justify-center">
                 <div class="w-full">Kami yang berbahagia mengharap kehadiran Bapak/Ibu/Saudara(i):</div>
@@ -24,7 +11,6 @@
                 </div>
             </div>
             <div class="md:hidden block py-4"></div>
-            <!-- <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="2000" class="mt-12"> -->
             <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500" class="mt-12">
                 <vac :end-time="startTime" class="text-gray-700 text-3xl md:text-5xl text-center">
                     <span slot="process" slot-scope="{ timeObj }">
