@@ -14,7 +14,10 @@
             class="absolute top-2/3 left-[40%] md:left-1/2 transform -translate-x-[30%] md:-translate-x-1/2 -translate-y-1/3 z-30 text-6xl font-black text-center nama text-white">
             Teo Anggara Nur Ramadhana
         </div>
-        <div class="w-screen h-screen bg-center bg-contain" :style="{ backgroundImage: `url(${image})` }">
+        <div class="w-screen h-screen bg-gray-800">
+            <div class="w-screen h-screen bg-center bg-contain opacity-70"
+                :style="{ backgroundImage: `url(${image})` }">
+            </div>
         </div>
         <!-- <div class="flex justify-center bg-gray-800">
             <nuxt-img preload :src="image" fit="cover" class="h-screen opacity-50" />
