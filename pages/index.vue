@@ -3,7 +3,7 @@
     <div v-if="!open">
       <div
         class="fixed top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/5 z-40 text-xl md:text-2xl text-white text-center">
-        Kepada Yth Bapak/Ibu/Saudara(i):
+        Kepada Yth Bapak/Ibu/Saudara/i:
       </div>
       <div
         class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-40 text-3xl text-white text-center leading-none font-bold">

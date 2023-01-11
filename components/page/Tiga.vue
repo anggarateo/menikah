@@ -3,7 +3,7 @@
         <div class="h-screen py-4">
             <div data-aos="fade-right" data-aos-duration="1500"
                 class="flex flex-wrap gap-y-6 text-center justify-center">
-                <div class="w-full">Kami yang berbahagia mengharap kehadiran Bapak/Ibu/Saudara(i):</div>
+                <div class="w-full">Kami yang berbahagia mengharap kehadiran Bapak/Ibu/Saudara/i:</div>
                 <div class="w-full">Hari Minggu, 29 Januari 2023 <br />pukul 13.00 s.d. 15.00 WIB</div>
                 <div class="w-full">Di kediaman mempelai perempuan: <br />Dusun Gebyaran Desa Puhjarak
                     Kecamatan Plemahan
@@ -68,7 +68,7 @@ export default {
             startTime: new Date("2023-01-29 8:00 am"),
             endTime: new Date("2023-01-29 3:00 pm"),
             title: "Nikahnya Ema Ruly %26 Teo Anggara",
-            details: "Kehormatan bagi kami atas kehadiran Bapak/Ibu/Saudara(i)<br><br><br>Ema Ruly %26 Teo Anggara",
+            details: "Kehormatan bagi kami atas kesediaan Bapak/Ibu/Saudara/i dalam meluangkan waktu untuk menghadiri pernikahan kami.<br><br><br>Ema Ruly %26 Teo Anggara",
             location: "Plemahan, Kediri",
             mapDir: null
         }
