@@ -37,7 +37,7 @@
                 </vac>
                 <div class="flex justify-center">
                     <div class="text-center p-4 bg-gray-500 text-white opacity-60 hover:opacity-75 rounded-xl cursor-pointer my-8"
-                        @click="addToCalendar">{{ 'Simpan di Kalender Google' }}</div>
+                        @click="addToCalendar">{{ 'Simpan di Google Calendar' }}</div>
                 </div>
             </div>
         </div>
