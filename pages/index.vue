@@ -7,7 +7,7 @@
       </div>
       <div
         class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-40 text-3xl text-white text-center leading-none font-bold">
-        {{ $route.query.to }}
+        {{ $route.query.mengundang }}
       </div>
       <div @click="opened()"
         class="fixed top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/5 z-40 text-xl text-gray-700 text-center cursor-pointer bg-white md:opacity-50 hover:opacity-75 opacity-75 rounded-full p-2 md:p-4">
