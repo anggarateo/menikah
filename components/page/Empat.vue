@@ -1,7 +1,7 @@
 <template>
     <div class="w-full h-full">
         <ClientOnly>
-            <carousel :per-page="1" :autoplay="true" :loop="true" :speed="3000" :autoplay-timeout="6000"
+            <carousel :per-page="1" :autoplay="true" :loop="true" :speed="3000" :autoplay-timeout="3000"
                 pagination-active-color="#1f2937" pagination-color="#9ca3af" :mouse-drag="false">
                 <slide v-for="(image, i) in images" :key="i">
                     <div class="flex justify-center">
