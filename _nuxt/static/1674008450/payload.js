@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/", {data:[{_img:{}}],fetch:{"IndexPage:0":{open:false,image:".\u002Fbg-undangan\u002Fcover.jpg"}},mutations:[]});
