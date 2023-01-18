@@ -4,7 +4,8 @@ export const state = () => ({
         './bg-undangan/2.jpg',
         './bg-undangan/3.jpg',
         './bg-undangan/4.jpg',
-        './bg-undangan/5.jpg'
+        './bg-undangan/5.jpg',
+        './bg-undangan/6.jpg'
     ],
     'mempelai': {
         'putra': './bg-undangan/putra.jpg',
